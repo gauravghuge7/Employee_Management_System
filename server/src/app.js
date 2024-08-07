@@ -13,13 +13,14 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const ClientUrl = 'https://employee-management-system-2b0vjt7yk-gaurav-ghuges-projects.vercel.app/' || 'http://localhost:5173';
+const ClientUrl = 'https://employee-management-system-2b0vjt7yk-gaurav-ghuges-projects.vercel.app/';
 
 // enable cross origin requests
 app.use(cors(
   {
-    origin: ClientUrl,
+    origin: 'https://employee-management-system-k49b814pz-gaurav-ghuges-projects.vercel.app/',
     credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   }
 ));
 
