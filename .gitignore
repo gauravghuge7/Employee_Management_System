@@ -1,0 +1,13 @@
+node_modules
+diff
+
+.vscode
+
+.env
+
+*/node_modules
+*/.env
+*/.vscode
+*/diff
+
+.idea
