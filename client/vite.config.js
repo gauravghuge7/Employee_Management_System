@@ -5,7 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     proxy: {
-      '/api': 'http://localhost:5200/',
+      '/api': 'https://emplyeemanagement1-production.up.railway.app/',
+
+      // '/': 'http://localhost:5200/',
+      
     }
   },
 
