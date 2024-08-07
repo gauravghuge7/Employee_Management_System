@@ -13,7 +13,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const ClientUrl = 'https://employee-management-system-rose.vercel.app/' || 'http://localhost:5173';
+const ClientUrl = 'https://employee-management-system-2b0vjt7yk-gaurav-ghuges-projects.vercel.app/' || 'http://localhost:5173';
 
 // enable cross origin requests
 app.use(cors(
