@@ -6,5 +6,5 @@ export const serverUrl = 'https://employeemanagementsystem-copy-production.up.ra
 
 
 
-// export const serverUrl = 'https://emplyeemanagement1-production.up.railway.app';
+// export const serverUrl = '';
 
