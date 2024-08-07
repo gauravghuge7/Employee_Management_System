@@ -39,7 +39,7 @@ function Register() {
   
     try {
       const response = await axios.post(
-        `${serverUrl || "http://localhost:5200" }/api/v1/admin/registerUser`,
+        `${serverUrl } /api/v1/admin/registerUser`,
         body,
         config
       );
