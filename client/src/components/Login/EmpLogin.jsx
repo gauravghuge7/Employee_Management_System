@@ -33,7 +33,7 @@ function EmpLogin({ setUserType }) {
     try {
       
       const response = await axios.post(
-        `${serverUrl || "http://localhost:5200" }/api/v1/user/login`,
+        `${serverUrl }/api/v1/user/login`,
         body,
         config
       );

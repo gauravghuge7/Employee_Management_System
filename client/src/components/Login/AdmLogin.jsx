@@ -33,7 +33,7 @@ function AdmLogin({loginType}) {
       }
 
       try {
-        const response = await axios.post(`${serverUrl || "http://localhost:5200" }/api/v1/admin/login`, body, config);
+        const response = await axios.post(`${serverUrl }/api/v1/admin/login`, body, config);
     
         console.log(response);
     
