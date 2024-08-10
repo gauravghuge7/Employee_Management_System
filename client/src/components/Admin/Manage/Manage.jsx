@@ -110,9 +110,12 @@ function ShowTableData({ DataObject }) {
 
   return (
     <div className="text-white">
-      {DataObject.map((data, i) => (
+
+      {
+        DataObject.map((data, i) => ( 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4 my-2 border-b border-gray-700 flex flex-col sm:flex-row bg-gray-900" key={i}>
-          <div className="md:hidden font-bold">First Name</div>
+          
+           <div className="md:hidden font-bold">First Name</div>
           <h2 className="truncate">{data.firstName}</h2>
           <div className="md:hidden font-bold">Last Name</div>
           <h2>{data.lastName}</h2>
@@ -154,6 +157,12 @@ function ShowTableData({ DataObject }) {
           )}
         </div>
       ))}
+
+
+
+
+
+
       <dialog ref={deleteEmployeeRef} className="relative z-10 p-5 rounded-lg bg-gray-800 text-white">
         <h2 className="text-lg font-bold mb-4">Confirm Delete</h2>
         <p>Enter the employee email to confirm deletion:</p>

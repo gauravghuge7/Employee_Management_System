@@ -21,6 +21,8 @@ app.use(cors(
     origin: process.env.CLIENT,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+
+    
   }
 ));
 

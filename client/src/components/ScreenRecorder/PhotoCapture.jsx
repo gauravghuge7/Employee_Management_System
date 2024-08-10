@@ -28,6 +28,7 @@ function PhotoCapture() {
         try {
             stopCameraStream();
             const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            
             videoRef.current.srcObject = stream;
             timeoutRef.current = setTimeout(() => capturePhoto(), 1000);
         } catch (error) {
